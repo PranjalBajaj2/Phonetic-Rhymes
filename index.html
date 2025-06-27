@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Poetry Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Poetry Assistant</h2>
+
+    <div class="controls">
+      <input type="text" id="wordInput" placeholder="Enter a word..." />
+      <select id="modeSelect">
+        <option value="rhyme">Find Rhymes</option>
+        <option value="alliteration">Find Alliteration</option>
+        <option value="rhythm">Find Rhythm / Metre</option>
+      </select>
+      <button onclick="handleAssistant()">Analyze</button>
+      <button onclick="clearResults()">Clear</button>
+    </div>
+
+    <ul id="output"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
